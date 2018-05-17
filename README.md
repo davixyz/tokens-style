@@ -1,4 +1,4 @@
-# PayPal Native Tokens
+# Tokens
 Design Tokens for Native PoC
 
 ## Installing / Getting started
