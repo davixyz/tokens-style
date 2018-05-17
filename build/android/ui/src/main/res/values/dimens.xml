@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Wed May 16 2018 21:31:43 GMT-0700 (PDT)
+-->
+<resources>
+  <dimen name="size_random">16.00dp</dimen>
+  <dimen name="size_spacing_xs">24.00sp</dimen>
+  
+</resources>

@@ -1,0 +1,34 @@
+{
+  "color": {
+    "text": {
+      "primary": {
+        "default": {
+          "value": "{color.base.white.value}",
+          "attributes": {
+            "choice": true
+          }
+        }
+      },
+      "secondary": {
+        "default": {
+          "value": "{color.base.blue.400.value}",
+          "attributes": {
+            "choice": true
+          }
+        },
+        "active": {
+          "value": "{color.base.blue.400.value}",
+          "attributes": {
+            "choice": true
+          }
+        }
+      },
+      "body": {
+        "value": "{color.base.grey.700.value}",
+        "attributes": {
+          "choice": true
+        }
+      }
+    }
+  }
+}

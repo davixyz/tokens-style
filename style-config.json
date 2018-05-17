@@ -1,0 +1,68 @@
+{
+  "source": [
+    "properties/**/*.json"
+  ],
+  "platforms": {
+    "less": {
+      "transformGroup": "scss",
+      "buildPath": "build/",
+      "files": [{
+        "destination": "scss/variables.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "ios-swift": {
+      "transformGroup": "ios-swift",
+      "buildPath": "build/",
+      "files": [{
+        "destination": "ios/Color.swift",
+        "template": "ios/color-swift",
+        "className": "Color",
+        "type": "ColorName",
+        "filter": {
+          "attributes": {
+            "category": "color",
+            "choice": true
+          }
+        }
+      }]
+    },
+    "ios-icons": {
+      "buildPath": "build/ios/icons/",
+      "actions": ["copy_icons_ios"]
+    },
+    "android": {
+      "transformGroup": "android",
+      "buildPath": "build/android/ui/src/main/res/",
+      "files": [{
+        "destination": "values/colors.xml",
+        "template": "android/custom-colors",
+        "filter": {
+          "attributes": {
+            "category": "color",
+            "decision": true
+          }
+        }
+      },{
+        "destination": "values/font_dimens.xml",
+        "template": "android/custom-fontDimens",
+        "filter": {
+          "attributes": {
+            "decision": true
+          }
+        }
+      },{
+        "destination": "values/dimens.xml",
+        "template": "android/dimens"
+      }]
+    },
+    "android-fonts": {
+      "buildPath": "build/android/ui/src/main/res/font/",
+      "actions": ["copy_fonts"]
+    },
+    "android-icons": {
+      "buildPath": "build/android/ui/src/main/res/drawable/",
+      "actions": ["copy_icons_android"]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "size": {
+    "font": {
+      "heading_lg": {
+        "value": "{size.font.base.300.value}",
+        "attributes": {
+          "decision": true
+        }
+      }
+    }
+  }
+}

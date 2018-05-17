@@ -1,0 +1,9 @@
+{
+  "size": {
+    "spacing": {
+      "xs": {
+        "value": "{size.font.base.300.value}"
+      }
+    }
+  }
+}

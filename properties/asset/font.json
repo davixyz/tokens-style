@@ -1,0 +1,18 @@
+{
+  "asset": {
+    "font": {
+      "noto-sans-thin": {
+        "name" : { "value": "NotoSans Thin" },
+        "path"  : { "value": "assets/fonts/notosans_thin.ttf" }
+      },
+      "noto-sans-medium": {
+        "name" : { "value": "NotoSans Medium" },
+        "path"  : { "value": "assets/fonts/notosans_medium.ttf" }
+      },
+      "noto-sans-bold": {
+        "name" : { "value": "NotoSans Regular" },
+        "path"  : { "value": "assets/fonts/notosans_bold.ttf" }
+      }
+   }
+  }
+}

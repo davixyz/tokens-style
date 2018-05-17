@@ -1,0 +1,26 @@
+{
+  "color": {
+    "background": {
+      "primary": {
+        "default": {
+          "value": "{color.base.blue.600.value}",
+          "attributes": {
+            "decision": true
+          }
+        },
+        "active": {
+          "value": "{color.base.blue.800.value}",
+          "attributes": {
+            "decision": true
+          }
+        }
+      },
+      "inverse": {
+        "value": "{color.base.white.value}",
+        "attributes": {
+          "decision": true
+        }
+      }
+    }
+  }
+}

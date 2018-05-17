@@ -1,0 +1,50 @@
+{
+  "size": {
+    "font": {
+      "base": {
+        "0": {
+          "value": "0",
+          "attributes": {
+            "realValue": "0"
+          }
+        },
+        "1": {
+          "value": "0.0625",
+          "attributes": {
+            "realValue": "1"
+          }
+        },
+        "100": {
+          "value": "0.9375",
+          "attributes": {
+            "realValue": "15"
+          }
+        },
+        "200": {
+          "value": "1.125",
+          "attributes": {
+            "realValue": "18"
+          }
+        },
+        "300": {
+          "value": "1.5",
+          "attributes": {
+            "realValue": "24"
+          }
+        },
+        "400": {
+          "value": "1.875",
+          "attributes": {
+            "realValue": "30"
+          }
+        },
+        "500": {
+          "value": "2.8125",
+          "attributes": {
+            "realValue": "45"
+          }
+        }
+      }
+    }
+  }
+}

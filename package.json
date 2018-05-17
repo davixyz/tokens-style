@@ -1,0 +1,27 @@
+{
+  "name": "tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "fs-extra": "^5.0.0",
+    "pdfkit": "^0.8.3",
+    "style-dictionary": "^2.1.0",
+    "svg-to-pdfkit": "^0.1.7",
+    "svgsus": "^0.23.4",
+    "tinycolor2": "^1.4.1"
+  }
+}

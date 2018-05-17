@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Wed May 16 2018 21:31:43 GMT-0700 (PDT)
+-->
+<resources>
+  <color name="color_background_primary_default">#ff0070ba</color>
+  <color name="color_background_primary_active">#ff003087</color>
+  <color name="color_background_inverse">#ffffffff</color>
+  
+</resources>
