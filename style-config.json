@@ -4,11 +4,14 @@
   ],
   "platforms": {
     "less": {
-      "transformGroup": "scss",
+      "transformGroup": "custom-scss",
       "buildPath": "build/",
       "files": [{
         "destination": "scss/variables.scss",
         "format": "scss/variables"
+      },{
+        "destination": "test.json",
+        "format": "json"
       }]
     },
     "ios-swift": {
@@ -54,6 +57,9 @@
       },{
         "destination": "values/dimens.xml",
         "template": "android/dimens"
+      },{
+        "destination": "values/allResources.xml",
+        "template": "android/resources"
       }]
     },
     "android-fonts": {

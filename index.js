@@ -12,19 +12,6 @@ const PDFDocument = require('pdfkit');
 const SVGtoPDF = require('svg-to-pdfkit');
 
 
-// Custom SCSS transform
-StyleDictionary.registerTransformGroup({
-  name: 'custom-scss',
-  transforms: [
-    'attribute/cti',
-    'name/cti/kebab',
-    'time/seconds',
-    'content/icon',
-    'size/rem',
-    'color/rgb',
-  ],
-});
-
 // Custom Transformer for swift colors
 StyleDictionary.registerTransform({
   name: 'color/SwiftColor',
@@ -37,6 +24,50 @@ StyleDictionary.registerTransform({
     return `0x${color}`;
   },
 });
+
+// Experimental
+// This is to override the 'attribute/cti' transform so that we can define the CTI of the property
+StyleDictionary.registerTransform({
+  name: 'attribute/overrides',
+  type: 'attribute',
+  matcher(prop) {
+    return prop.category || prop.type || prop.item;
+  },
+  transformer(prop) {
+    return {
+      category: prop.category || prop.attributes.category,
+      type: prop.type || prop.attributes.type,
+      item: prop.item || prop.attributes.item
+    }
+  }
+});
+
+// Custom SCSS transform
+StyleDictionary.registerTransformGroup({
+  name: 'custom-scss',
+  transforms: [
+    'attribute/cti',
+    'attribute/overrides',
+    'name/cti/kebab',
+    'time/seconds',
+    'content/icon',
+    'size/rem',
+    'color/rgb',
+  ],
+});
+
+StyleDictionary.registerTransformGroup({
+  name: 'android',
+  transforms: [
+    'attribute/cti',
+    'attribute/overrides',
+    'name/cti/snake',
+    'color/hex8android',
+    'size/remToSp',
+    'size/remToDp'
+  ],
+});
+
 
 StyleDictionary.registerTransformGroup({
   name: 'ios-swift',
@@ -63,6 +94,11 @@ StyleDictionary.registerTemplate({
 StyleDictionary.registerTemplate({
   name: 'android/custom-fontDimens',
   template: path.join(__dirname, '/templates/android/fontDimens.template'),
+});
+
+StyleDictionary.registerTemplate({
+  name: 'android/resources',
+  template: path.join(__dirname, '/templates/android/resources.template'),
 });
 
 

@@ -1,0 +1,30 @@
+{
+  "typography": {
+    "heading-1": {
+      "font-size": {
+        "value": "{size.font.xxxl.value}",
+        "category": "size",
+        "type": "font",
+        "attributes": {
+          "decision": true
+        }
+      },
+      "line-height": {
+        "value": "{number.line-height.header.value}",
+        "category": "number",
+        "type": "line-height",
+        "attributes": {
+          "decision": true
+        }
+      },
+      "color": {
+        "value": "{color.text.secondary.default.value}",
+        "category": "color",
+        "type": "text",
+        "attributes": {
+          "decision": true
+        }
+      }
+    }
+  }
+}
