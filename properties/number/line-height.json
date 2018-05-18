@@ -1,0 +1,16 @@
+{
+  "number": {
+    "line-height": {
+      "tiny"  : { "value": "1" },
+      "small" : { "value": "1.25" },
+      "medium": { "value": "1.5" },
+      "large" : { "value": "1.75" },
+      "xl"    : { "value": "2" },
+      "xxl"   : { "value": "2.5" },
+      "xxxl"  : { "value": "3" },
+
+      "base"  : { "value": "{number.line-height.medium.value}" },
+      "header": { "value": "{number.line-height.tiny.value}" }
+    }
+  }
+}
